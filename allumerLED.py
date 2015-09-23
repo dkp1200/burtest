@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-def blink(pin, n=60):
+def blink(pin, n=80):
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(pin, GPIO.OUT)
     for i in xrange(n):
